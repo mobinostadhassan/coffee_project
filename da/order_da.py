@@ -1,5 +1,6 @@
 from da.tools.database_manager import *
-from model.lesson import Lesson
+from model.order import Order
+from datetime import datetime
 
 session = get_session()
 
@@ -20,10 +21,10 @@ def remove(order):
 
 
 def find_all():
-    return session.query(order).all()
+    return session.query(Order).all()
 
 
 def find_by_id(order_id):
-    return session.query(order).get(order_id)
+    return session.query(Order).get(order_id)
 
 

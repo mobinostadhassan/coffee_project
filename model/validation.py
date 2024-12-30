@@ -31,9 +31,9 @@ def time_validator(time):
         raise ValueError("Invalid Time !!!")
 
 
-def teacher_validator(teacher):
-    if type(teacher) == str and re.match(r"^[a-zA-Z\s]{3,30}$", teacher):
-        return teacher
+def order_validator(order):
+    if type(str) == str and re.match(r"^[a-zA-Z\s]{3,30}$", order):
+        return order
     else:
         raise ValueError("invalid teacher !!!")
 
